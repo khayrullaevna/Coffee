@@ -1,0 +1,31 @@
+.commitment{
+  margin-top: 168px;
+  display: flex;
+  justify-content: space-evenly;
+
+  &__info{
+    margin: 30px 0 0 125px;
+  }
+
+  &__title{
+    // padding: 137px 0 0 85px;
+    width: 357px;
+    height: 48px;
+    color: #333D4B;
+    font-size: 40px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    line-height: 48px;
+  }
+
+  &__text{
+    // margin: 0 0 0 85px;
+    width: 540px;
+    height: 260px;
+    color: #333D4B;
+    font-size: 16px;
+    font-family: "Barlow";
+    line-height: 26px;
+  }
+}
+  

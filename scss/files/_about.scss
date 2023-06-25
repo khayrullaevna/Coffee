@@ -1,0 +1,23 @@
+.about{
+  background-image: url(../img/Bitmap.png);
+  height: 450px;
+  border-radius: 10px;
+  
+  &__title{
+    padding: 137px 0 0 85px;
+    color: #FEFCF7;
+    font-size: 40px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    line-height: 48px;
+  }
+
+  &__text{
+    margin: 0 0 0 85px;
+    width: 445px;
+    color: #FEFCF7;
+    font-size: 16px;
+    font-family: "Barlow";
+    line-height: 26px;
+  }
+}

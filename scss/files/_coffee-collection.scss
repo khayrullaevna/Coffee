@@ -1,0 +1,39 @@
+.coffee-collection {
+    width: 1111px;
+    height: 524.545px;
+    margin: 0 auto;
+    margin-top: -80px;
+  
+    .collection-img {
+      position: relative;
+    }
+  
+    .coffee {
+      display: flex;
+      justify-content: space-between;
+      margin-top: -70px;
+  
+      &__img {
+        position: relative;
+      }
+  
+      &__title {
+        width: 255px;
+        color: #333d4b;
+        text-align: center;
+        font-size: 24px;
+        font-family: "Fraunces";
+        font-weight: 900;
+        line-height: 32px;
+      }
+  
+      &__text {
+        width: 255px;
+        color: #333d4b;
+        text-align: center;
+        font-size: 16px;
+        font-family: "Barlow";
+        line-height: 26px;
+      }
+    }
+  }

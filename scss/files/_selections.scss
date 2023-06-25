@@ -1,0 +1,185 @@
+.selections{
+    display: flex;
+    margin-top: 168px;
+    margin-left: 85px;
+    gap: 125px;
+}
+
+.choice{
+    width: 255px;
+    height: 356px;
+
+    &__num{
+        display: inline-block;
+        color: #83888F;
+        font-size: 24px;
+        font-family: "Fraunces";
+        font-weight: 900;
+        line-height: 32px;
+    
+        &:hover{
+            color: #0E8784;
+        }
+    }
+    
+    &__title{
+        display: inline-block;
+        margin-left: 24.5px;
+        color: #83888F;
+        font-size: 24px;
+        font-family: "Fraunces";
+        font-weight: 900;
+        line-height: 32px;
+    
+        &:hover{
+            color: #333D4B;
+        }
+    }
+    
+    &__line{
+        width: 255px;
+        height: 1px;
+        opacity: 0.25;
+        background: #83888F;
+    }
+}
+
+.option{
+    width: 730px;
+
+    &__heading{
+        display: flex;
+        justify-content: space-between;
+        height: 48px;
+        align-items: center;
+        gap: 79.586px;
+    }
+    
+    &__title{
+        color: #83888F;
+        font-size: 40px;
+        font-family: "Fraunces";
+        font-weight: 900;
+        line-height: 48px;
+    }
+    
+    &__path{
+        width: 18.191px;
+        height: 11.924px;
+    }
+    
+    &__box{
+        margin: 56px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__grey{
+        width: 228px;
+        height: 250px;
+        border-radius: 8px;
+        background: #F4F1EB;
+    }
+    
+    &__grey>h4{
+        margin-left: 28px;
+        color: #333D4B;
+        font-size: 24px;
+        font-family: "Fraunces";
+        font-weight: 900;
+        line-height: 32px;
+    }
+    
+    &__grey>p{
+        margin-left: 28px;
+        width: 172px;
+        color: #333D4B;
+        font-size: 16px;
+        font-family: "Barlow";
+        line-height: 26px;
+    }
+    
+    &__green{
+        width: 228px;
+        height: 250px;
+        border-radius: 8px;
+        background: #0E8784;
+    }
+    
+    &__green>h4{
+        margin-left: 28px;
+        color: #FFF;
+        font-size: 24px;
+        font-family: "Fraunces";
+        font-weight: 900;
+        line-height: 32px;
+    }
+    
+    &__green>p{
+        margin-left: 28px;
+        width: 172px;
+        color: #FEFCF7;
+        font-size: 16px;
+        font-family: "Barlow";
+        line-height: 26px;
+    }
+    
+    &__green:hover{
+        background: #FDD6BA;
+    }
+    
+    &__grey:hover{
+        background: #FDD6BA;
+    }
+    
+    &__button {
+        margin: 56px 0 0 513px;
+        width: 217px;
+        height: 56px;
+        border-style: hidden;
+        border-radius: 6px;
+        background: #0e8784;
+        color: #fefcf7;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Fraunces";
+        font-weight: 900;
+        line-height: 25px;
+    
+        &:active {
+          background: #66d2cf;
+        }
+    }
+}
+
+.order{
+    background-color: #282f38;
+    width: 730px;
+    height: 208px;
+
+    &__summary{
+        margin: 0;
+        padding-top: 31px;
+        padding-left: 64px;
+        width: 172px;
+        color: #FFF;
+        font-size: 16px;
+        font-family: "Barlow";
+        line-height: 26px;
+    }
+
+    &__text{
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 602px;
+        color: #FFF;
+        font-size: 24px;
+        font-family: "Fraunces";
+        font-weight: 900;
+        line-height: 40px;
+    }
+}
+
+span{
+    color: #0E8784;
+}

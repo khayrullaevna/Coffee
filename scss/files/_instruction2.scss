@@ -1,0 +1,68 @@
+.instruction2{
+  margin-top: 168px;
+  background-color: #282f38;
+  width: 1280px;
+  height: 653px;
+
+  &__line {
+    width: 760px;
+    margin-top: 115px;
+    margin-left: 85px;
+  }
+
+  &__boxes {
+    margin-left: 85px;
+    display: flex;
+    gap: 95px;
+    margin-bottom: 65px;
+  }
+
+  &__box {
+    width: 285px;
+    height: 355px;
+  }
+
+  &__num {
+    color: #fdd6ba;
+    font-size: 72px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    line-height: 72px;
+  }
+
+  &__step {
+    width: 255px;
+    height: 73px;
+    color: #FEFCF7;
+    font-size: 32px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    line-height: 36px;
+  }
+
+  &__text {
+    width: 285px;
+    color: #FEFCF7;
+    font-size: 16px;
+    font-family: "Barlow";
+    line-height: 26px;
+  }
+}
+
+
+
+
+
+
+
+// .instruction__title {
+//     margin-bottom: 80px;
+//     width: 255px;
+//     color: #83888f;
+//     font-size: 24px;
+//     font-family: "Fraunces";
+//     font-weight: 900;
+//     line-height: 32px;
+//   }
+  
+  
