@@ -37,3 +37,45 @@
       }
     }
   }
+
+  @media only screen and (max-width: 900px){
+
+    .collection-img{
+      width: 689px;
+      height: 118px;
+    }
+
+    .coffee{
+      flex-direction: column;
+
+      &__types{
+        align-items: center;
+        display: flex;
+        text-align: left;
+      }
+
+      &__content{
+        max-width: 280px;
+      }
+
+      &__title{
+        margin-top: 0px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 550px){
+    .collection-img{
+      width: 375px;
+      height: 72px;
+    }
+
+
+    .coffee{
+      &__types{
+        flex-direction: column;
+        text-align: center;
+        
+      }
+    }
+  }

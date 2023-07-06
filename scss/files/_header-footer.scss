@@ -2,7 +2,15 @@
     width: 1280px;
     margin: 0 auto;
     padding: 0;
+}
+
+@media only screen and (max-width: 900px){
+  .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
   }
+}
   
 .header {
     display: flex;
@@ -13,7 +21,11 @@
       width: 236px;
       height: 26px;
     }
-  
+
+    &__toggle{
+      display: none;
+    }
+
     &__nav {
       margin-top: 5px;
   
@@ -35,6 +47,22 @@
     }
 }
 
+@media only screen and (max-width: 550px){
+  .header{
+    &__toggle{
+      display: block;
+    }
+
+    &__items{
+      display: none;
+    }
+
+    &__logo{
+      width: 163px;
+      height: 18px;
+    }
+  }
+}
 
 .footer1 {
     margin-top: 200px;
@@ -53,10 +81,11 @@
       .footer__logo {
         width: 236px;
         height: 26px;
+        margin-right: 103px;
       }
   
       .footer__nav1 {
-        margin-left: 103px;
+        // margin-left: 103px;
         padding: 3px;
       }
   
@@ -84,4 +113,45 @@
         color: #fdd6ba;
       }
     }
+  }
+
+  @media only screen and (max-width: 900px){
+    .footer{
+      width: 768px;
+      flex-direction: column;
+      justify-content: center;
+      gap: 65px;
+
+      &__nav{
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 550px){
+    .footer{
+      flex-direction: column;
+      width: 327px;
+
+      &__nav{
+        flex-direction: column;
+      }
+
+      &__nav1{
+        margin-top: 48px;
+      }
+
+      &__items{
+        display: block;
+        margin-top: 25px;
+      }
+
+
+      &__sites{
+        margin-top: 48px;
+      }
+    }
+
   }
