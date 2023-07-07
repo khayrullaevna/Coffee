@@ -1,81 +1,88 @@
 .coffee-collection {
-    width: 1111px;
-    height: 524.545px;
-    margin: 0 auto;
-    margin-top: -80px;
-  
-    .collection-img {
+  max-width: 1111px;
+  height: 524.545px;
+  margin: 0px auto;
+  margin-top: -80px;
+
+  .coffee {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -70px;
+
+    &__img {
       position: relative;
     }
-  
-    .coffee {
+
+    &__title {
+      width: 255px;
+      color: #333d4b;
+      text-align: center;
+      font-size: 24px;
+      font-family: "Fraunces";
+      font-weight: 900;
+      line-height: 32px;
+    }
+
+    &__text {
+      width: 255px;
+      color: #333d4b;
+      text-align: center;
+      font-size: 16px;
+      font-family: "Barlow";
+      line-height: 26px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .coffee-collection {
+    margin: 140px auto;
+    height: auto;
+  }
+  .collection-img {
+    margin: 0 auto;
+    width: 689px;
+    height: 118px;
+    margin-bottom: 30px;
+  }
+
+  .coffee {
+    flex-direction: column;
+    margin: 0 auto; 
+    justify-content: center;
+    align-items: center;
+
+    &__types {
+      align-items: center;
       display: flex;
-      justify-content: space-between;
-      margin-top: -70px;
-  
-      &__img {
-        position: relative;
-      }
-  
-      &__title {
-        width: 255px;
-        color: #333d4b;
-        text-align: center;
-        font-size: 24px;
-        font-family: "Fraunces";
-        font-weight: 900;
-        line-height: 32px;
-      }
-  
-      &__text {
-        width: 255px;
-        color: #333d4b;
-        text-align: center;
-        font-size: 16px;
-        font-family: "Barlow";
-        line-height: 26px;
-      }
+      text-align: left;
+    }
+
+    &__content {
+      max-width: 280px;
+    }
+
+    &__title {
+      margin-top: 0px;
     }
   }
+}
 
-  @media only screen and (max-width: 900px){
+@media only screen and (max-width: 480px) {
+  .collection-img {
+    width: 375px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
 
-    .collection-img{
-      width: 689px;
-      height: 118px;
-    }
-
-    .coffee{
+  .coffee {
+    &__types {
       flex-direction: column;
-
-      &__types{
-        align-items: center;
-        display: flex;
-        text-align: left;
-      }
-
-      &__content{
-        max-width: 280px;
-      }
-
-      &__title{
-        margin-top: 0px;
-      }
+      text-align: center;
     }
   }
-
-  @media only screen and (max-width: 550px){
-    .collection-img{
-      width: 375px;
-      height: 72px;
-    }
-
-
-    .coffee{
-      &__types{
-        flex-direction: column;
-        text-align: center;
-        
-      }
-    }
-  }
+}

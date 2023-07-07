@@ -1,4 +1,6 @@
-.instruction__title {
+.instruction{
+
+  &__title {
     margin-bottom: 80px;
     width: 255px;
     color: #83888f;
@@ -8,46 +10,128 @@
     line-height: 32px;
   }
   
-  .instruction__line {
+  &__line {
     width: 760px;
   }
   
-  .instruction__boxes {
+  &__boxes {
     display: flex;
     gap: 95px;
     margin-bottom: 65px;
   }
   
-  .instruction__box {
+  &__box {
     width: 285px;
     height: 355px;
-  
-    .instruction__num {
-      color: #fdd6ba;
-      font-size: 72px;
-      font-family: "Fraunces";
-      font-weight: 900;
-      line-height: 72px;
+  }
+
+  &__num {
+    color: #fdd6ba;
+    font-size: 72px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    line-height: 72px;
+  }
+
+  &__step {
+    width: 255px;
+    height: 73px;
+    color: #333d4b;
+    font-size: 32px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    line-height: 36px;
+  }
+
+  &__text {
+    width: 285px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #333d4b;
+    font-size: 16px;
+    font-family: "Barlow";
+    line-height: 26px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .instruction{
+    width: 689px;
+    height: 622px;
+    margin: 0 auto;
+
+    &__line{
+      width: 467px;
     }
-  
-    .instruction__step {
-      width: 255px;
-      height: 73px;
-      color: #333d4b;
-      font-size: 32px;
-      font-family: "Fraunces";
-      font-weight: 900;
-      line-height: 36px;
+
+    &__boxes{
+      gap: 10px;
     }
-  
-    .instruction__text {
-      width: 285px;
-      flex-direction: column;
-      flex-shrink: 0;
-      color: #333d4b;
-      font-size: 16px;
-      font-family: "Barlow";
-      line-height: 26px;
+
+    &__box{
+      width: 223px;
+      height: 371px;
+    }
+
+    &__step{
+      width: 223px;
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    &__text{
+      width: 223px;
+      font-size: 15px;
+      line-height: 25px;
     }
   }
-  
+}
+
+@media only screen and (max-width: 480px){
+  .instruction{
+    width: 327px;
+    height: auto;
+    margin: 0 auto;
+
+    &__title{
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    &__line{
+      display: none;
+    }
+
+    &__boxes{
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &__box{
+      width: 327px;
+      height: 253px;
+      margin-bottom: 56px;
+    }
+
+    &__num{
+      margin: 0 auto;
+    }
+
+    &__step{
+      margin: 0 auto;
+      margin-top: 24px;
+      width: 327px;
+      text-align: center;
+    }
+
+    &__text{
+      margin: 0 auto;
+      padding: 0;
+      width: 327px;
+    }
+  }
+}
