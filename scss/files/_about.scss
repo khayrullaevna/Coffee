@@ -21,3 +21,48 @@
     line-height: 26px;
   }
 }
+
+@media only screen and (max-width: 768px){
+  .about{
+    margin: 0 auto;
+    max-width: 689px;
+    height: 400px;
+
+    &__title{
+      padding: 118px 0 0 56px;
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__text{
+      margin: 0 0 0 56px;
+      font-size: 15px;
+      line-height: 25px;
+      opacity: 0.800000011920929;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .about{
+    margin: 0 auto;
+    max-width: 327px;
+    height: 400px;
+
+    &__title{
+      padding: 111px 0 0 24px;
+      width: 279px;
+      text-align: center;
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    &__text{
+      margin: 0 0 0 24px;
+      font-size: 15px;
+      line-height: 25px;
+      width: 279px;
+      text-align: center;
+    }
+  }
+}
